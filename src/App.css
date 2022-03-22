@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Lato:wght@100&family=Montserrat&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.App {
+  text-align: center;
+  width: 820px;
+  height: 100vh;
+}
+.desription{
+  position: relative;
+  left: 0px;
+ 
+}
+.input-form{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 75px;
+}
+.conteiner{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  margin-top: 20px;
+}
+.map{
+  width: 500px;
+  height: 500px;
+  /* border: 1px solid black; */
+  margin-right: 20px;
+}
+.conteiner-driver-list{
+  width: 300px;
+  height: 500px;
+  border: 1px solid #dedede;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* background-color: grey; */
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  
+}
+
+button{
+  margin-top: 20px;
+  width: 300px;
+  height: 30px;
+  background: none;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+input{
+  border: 1px solid black;
+  width: 400px;
+  outline: none;
+  border-radius: 5px;
+}
+.description-input{
+margin-right: 20px;
+font-size: 12px;
+font-family: 'Charmonman';
+font-style: normal;
+font-weight: 600;
+margin-right: 20px;
+}
+.item-driver{
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.1s;
+  opacity: 0;
+  animation: ani 2.5s forwards;
+
+  }
+
+  @keyframes ani {
+    0% {opacity: 0; background-color: orange} 
+    50% {opacity: 1;}
+    70% {opacity: 0.5;}
+    100% {opacity: 1;}
+
+  }
+  .item-driver:hover{
+    transform: scale(1.05);
+    background-color: rgb(250, 216, 153);
+  }
+.car-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;   
+  position: relative;
+  width: 120px;
+
+
+ 
+}
+.car-name{
+font-size: 14px;
+width: 100%;
+position: relative;
+left: 0px;
+text-align: left;
+font-family: 'Charmonman';
+font-style: normal;
+font-weight: 600;
+
+}
+.car-color{
+width: 100%;
+text-align: left;
+position: relative;
+left: 0px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+}
+.item-driver-closer{
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  border: 1px solid #dedede;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 5px 0 5px -5px rgba(0, 0, 0, .5);
+  background-color: #ebfaeb
+}
+.car-number{
+border: 1px solid black;
+width: 100px;
+border-radius: 5px;
+position: relative;
+left: -10px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+margin-top: 5px;
+}
+.conteiner-driver-closer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+}
+.description-item-driver-closer{
+  text-decoration: overline;
+  font-size: 12px;
+  font-family: 'Charmonman';
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 20px;
+  
+}
