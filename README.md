@@ -1,4 +1,4 @@
 Небольшое MVP(только front) приложение для поиска ближайшего экипажа такси. С возможностью поиска адреса вручную(через input), и также кликом по карте.
 
 
-<img src="https://user-images.githubusercontent.com/91500048/152966683-f634652f-2250-4c20-b565-da901e81547f.png" width=30%> 
+<img src="https://user-images.githubusercontent.com/91464463/159540643-27b804f6-62c1-47f6-942b-b4632fa0b2a4.png" width=30%> 
